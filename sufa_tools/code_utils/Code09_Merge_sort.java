@@ -1,4 +1,4 @@
-package class02;
+package code_utils;
 
 import java.util.Arrays;
 

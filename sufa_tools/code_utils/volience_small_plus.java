@@ -1,4 +1,4 @@
-package class02;
+package code_utils;
 
 // 暴力求小和问题
 public class volience_small_plus {

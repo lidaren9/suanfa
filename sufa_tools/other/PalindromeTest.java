@@ -1,4 +1,4 @@
-package huiwen;
+package other;
 
 import java.util.Stack;
 

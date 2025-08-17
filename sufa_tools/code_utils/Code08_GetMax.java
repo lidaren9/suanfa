@@ -1,4 +1,4 @@
-package class02;
+package code_utils;
 
 public class Code08_GetMax {
     public static int getMax(int[] arr) {

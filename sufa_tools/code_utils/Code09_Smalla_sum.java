@@ -1,4 +1,4 @@
-package class02;
+package code_utils;
 
 public class Code09_Smalla_sum {
     public static void main(String[] args) {
