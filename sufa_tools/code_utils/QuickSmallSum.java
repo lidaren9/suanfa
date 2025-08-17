@@ -1,6 +1,6 @@
 package code_utils;
 
-public class Code09_Smalla_sum {
+public class QuickSmallSum {
     public static void main(String[] args) {
         int[] test = new int[]{1, 3, 4, 2, 5};
         int res = smallSum(test);

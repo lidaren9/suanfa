@@ -14,7 +14,7 @@ import base.Node;
 
 // }
 
-public class PalindromeTest {
+public class PalindromeUtil {
 
     public static boolean isPalindrome1(Node head) {
         Stack<Node> stack = new Stack<>();

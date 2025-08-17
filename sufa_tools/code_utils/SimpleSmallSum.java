@@ -1,7 +1,7 @@
 package code_utils;
 
 // 暴力求小和问题
-public class volience_small_plus {
+public class SimpleSmallSum {
 
     public static void main(String[] args) {
         int[] test = new int[] { 1, 3, 4, 2, 5 };

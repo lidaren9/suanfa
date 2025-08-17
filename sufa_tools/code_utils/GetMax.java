@@ -1,6 +1,6 @@
 package code_utils;
 
-public class Code08_GetMax {
+public class GetMax {
     public static int getMax(int[] arr) {
         return process(arr, 0, arr.length - 1);
     }

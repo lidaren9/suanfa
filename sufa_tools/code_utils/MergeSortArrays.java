@@ -3,7 +3,7 @@ package code_utils;
 import java.util.Arrays;
 
 // 归并排序
-public class Code09_Merge_sort {
+public class MergeSortArrays {
     public static void mergeSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
