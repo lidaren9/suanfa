@@ -4,16 +4,6 @@ import java.util.Stack;
 
 import base.Node;
 
-// class Node {
-//     public Node next;
-//     public int value;
-
-//     public Node(int data) {
-//         this.value = data;
-//     }
-
-// }
-
 public class PalindromeUtil {
 
     public static boolean isPalindrome1(Node head) {
