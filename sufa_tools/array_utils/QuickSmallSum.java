@@ -1,4 +1,4 @@
-package code_utils;
+package array_utils;
 
 public class QuickSmallSum {
     public static void main(String[] args) {

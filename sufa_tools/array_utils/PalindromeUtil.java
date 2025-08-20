@@ -1,4 +1,4 @@
-package other;
+package array_utils;
 
 import java.util.Stack;
 

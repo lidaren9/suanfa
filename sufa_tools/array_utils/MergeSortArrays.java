@@ -1,4 +1,4 @@
-package code_utils;
+package array_utils;
 
 import java.util.Arrays;
 
