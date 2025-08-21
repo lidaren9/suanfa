@@ -3,7 +3,7 @@ package array_utils;
 import java.util.Arrays;
 
 /**
- * @author LIDAREN
+ * @author LIDAREN9
  */
 public class FastSort {
     public static void main(String[] args) {
