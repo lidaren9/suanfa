@@ -17,9 +17,13 @@ public class HeapSort {
         if (arr == null || arr.length < 2) {
             return;
         }
+        /* opt
         for (int i = 0; i < arr.length; i++) {
             // 完成大根堆操作
             heapInsert(arr, i);
+        }*/
+        for (int i = arr.length - 1; i >= 0; i--) {
+            heapIfy(arr, i, arr.length);
         }
         int heapSize = arr.length;
         swap(arr, 0, --heapSize);
