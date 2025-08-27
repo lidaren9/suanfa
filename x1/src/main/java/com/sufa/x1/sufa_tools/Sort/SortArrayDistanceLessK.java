@@ -1,4 +1,4 @@
-package Sort;
+package com.sufa.x1.sufa_tools.Sort;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;

@@ -1,4 +1,4 @@
-package array_utils;
+package com.sufa.x1.sufa_tools.array_utils;
 
 // 暴力求小和问题
 public class SimpleSmallSum {
