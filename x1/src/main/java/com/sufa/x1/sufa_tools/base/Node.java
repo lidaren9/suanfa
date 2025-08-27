@@ -1,4 +1,4 @@
-package base;
+package com.sufa.x1.sufa_tools.base;
 /**
  * @author LIDAREN
  */
