@@ -1,6 +1,5 @@
-package array_utils;
+package com.sufa.x1.sufa_tools.array_utils;
 
-import javax.naming.PartialResultException;
 import java.util.Arrays;
 
 /**

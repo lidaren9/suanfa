@@ -1,8 +1,8 @@
-package array_utils;
-
-import java.util.Stack;
+package com.sufa.x1.sufa_tools.array_utils;
 
 import base.Node;
+
+import java.util.Stack;
 
 public class PalindromeUtil {
 

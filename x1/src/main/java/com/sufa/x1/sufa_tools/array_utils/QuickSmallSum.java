@@ -1,4 +1,4 @@
-package array_utils;
+package com.sufa.x1.sufa_tools.array_utils;
 
 public class QuickSmallSum {
     public static void main(String[] args) {
