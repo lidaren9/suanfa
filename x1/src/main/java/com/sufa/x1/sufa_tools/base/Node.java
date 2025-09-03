@@ -10,4 +10,11 @@ public class Node {
         this.value = data;
     }
 
+    @Override
+    public String toString() {
+        return "Node{" +
+                "next=" + next +
+                ", value=" + value +
+                '}';
+    }
 }
