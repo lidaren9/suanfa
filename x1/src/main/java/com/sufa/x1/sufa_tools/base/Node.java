@@ -5,6 +5,7 @@ package com.sufa.x1.sufa_tools.base;
 public class Node {
     public Node next;
     public int value;
+    public Node rand;
 
     public Node(int data) {
         this.value = data;
@@ -12,9 +13,6 @@ public class Node {
 
     @Override
     public String toString() {
-        return "Node{" +
-                "next=" + next +
-                ", value=" + value +
-                '}';
+        return value + "->" + next;
     }
 }
