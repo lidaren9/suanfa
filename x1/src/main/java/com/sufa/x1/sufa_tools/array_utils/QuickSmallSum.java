@@ -1,12 +1,6 @@
 package com.sufa.x1.sufa_tools.array_utils;
 
 public class QuickSmallSum {
-    public static void main(String[] args) {
-        int[] test = new int[]{1, 3, 4, 2, 5};
-        int res = smallSum(test);
-        System.out.println("small sum: " + res);
-    }
-
     public static int smallSum(int[] arr) {
         return process(arr, 0, arr.length -1);
     }
@@ -40,6 +34,4 @@ public class QuickSmallSum {
         }
         return res;
     }
-
-
 }

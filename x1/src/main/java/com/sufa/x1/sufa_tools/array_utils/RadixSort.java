@@ -6,12 +6,6 @@ import java.util.Arrays;
  * @author LIDAREN
  */
 public class RadixSort {
-    public static void main(String[] args) {
-        int[] test = new int[]{234, 56, 23, 7654, 2342, 54, 3423, 6543, 234, 76, 3453, 64, 4534, 78658, 4353, 34, 675, 86, 5432};
-        radixSort(test, 0, test.length - 1, getMaxBits(test));
-        System.out.println(Arrays.toString(test));
-    }
-
     public static int getMaxBits(int[] arr) {
         int max = Integer.MIN_VALUE;
         for (int i : arr) {
