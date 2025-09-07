@@ -84,30 +84,4 @@ public class PalindromeUtil {
         }
         return res;
     }
-
-    public static void main(String[] args) {
-        Node node1 = new Node(1);
-        node1.next = new Node(2);
-        node1.next.next = new Node(3);
-        node1.next.next.next = new Node(2);
-        node1.next.next.next.next = new Node(1);
-        boolean isPalindrome1 = isPalindrome1(node1);
-        if (isPalindrome1) {
-            System.out.println("这个Node是回文结构");
-        } else {
-            System.out.println("这个Node不是回文结构");
-        }
-        boolean isPalindrome2 = isPalindrome2(node1);
-        if (isPalindrome2) {
-            System.out.println("这个Node是回文结构");
-        } else {
-            System.out.println("这个Node不是回文结构");
-        }
-        boolean isPalindrome3 = isPalindrome3(node1);
-        if (isPalindrome3) {
-            System.out.println("这个Node是回文结构");
-        } else {
-            System.out.println("这个Node不是回文结构");
-        }
-    }
 }

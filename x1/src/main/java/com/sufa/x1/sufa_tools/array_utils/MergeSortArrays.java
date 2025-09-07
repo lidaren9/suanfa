@@ -39,20 +39,11 @@ public class MergeSortArrays {
             arr[L + j] = help[j];
         }
     }
-
     // T(N) = 2 * T ( N / 2) + O(N)
     // a = 2, b = 2, d = 1
-
     // 只要满足master公式的
     // log(b, a) > d -> O(N^log(b, a))
     // log(b, a) = d -> O(N^d * logN)
     // log(b, a) < d -> O(N^d)
-
     // 因此时间复杂度为： O(N*logN)
-
-    public static void main(String[] args) {
-        int[] test = new int[] { 4, 54, 2, 7, 90, 3, 5, 23, 6, 3, 7, 8, 3, 6754, 45324, 786, 234 };
-        mergeSort(test);
-        System.out.println(Arrays.toString(test));
-    }
 }

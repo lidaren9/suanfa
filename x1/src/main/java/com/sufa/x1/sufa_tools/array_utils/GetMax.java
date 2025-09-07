@@ -26,9 +26,4 @@ public class GetMax {
     // log(b, a) > d -> O(N^log(b, a))
     // log(b, a) = d -> O(N^d * logN)
     // log(b, a) < d -> O(N^d)
-
-    public static void main(String[] args) {
-        int[] test = new int[] {1, 4, 5, 6, 8, 2, 9, 10, 444, 21, 12};
-        System.out.println("test 数组中最大值是：" + getMax(test));
-    }
 }
