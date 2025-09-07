@@ -6,12 +6,6 @@ import java.util.Arrays;
  * @author LIDAREN9
  */
 public class FastSort {
-    public static void main(String[] args) {
-        int[] test = new int[]{4, 3, 5, 6, 5, 0, 1, 7, 8, 5};
-        process(test, 0, test.length - 1);
-        System.out.println(Arrays.toString(test));
-    }
-
     public static void process(int[] arr, int l, int r) {
         if (l < r) {
             swap(arr, l + (int) (Math.random() * (r - l + 1)), r);

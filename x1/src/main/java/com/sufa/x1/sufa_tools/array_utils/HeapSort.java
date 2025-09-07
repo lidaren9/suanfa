@@ -6,12 +6,6 @@ import java.util.Arrays;
  * @author LIDAREN
  */
 public class HeapSort {
-    public static void main(String[] args) {
-        int[] test = new int[]{3, 2, 4, 1, 6, 7, 3, 9, 4, 6, 2};
-        heapSort(test);
-        System.out.println(Arrays.toString(test));
-    }
-
     public static void heapSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
