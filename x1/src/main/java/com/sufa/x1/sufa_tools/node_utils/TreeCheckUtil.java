@@ -103,4 +103,31 @@ public class TreeCheckUtil {
         }
         return true;
     }
+
+    public static boolean checkBalancedTree(Node head) {
+        if (head == null) {
+            return true;
+        }
+        return process(head).isBalanced;
+    }
+
+    public static class ReturnType {
+        public boolean isBalanced;
+        public int height;
+        public ReturnType(boolean isBalanced, int height) {
+            this.isBalanced = isBalanced;
+            this.height = height;
+        }
+    }
+
+    private static ReturnType process(Node head) {
+        if (head == null) {
+            return new ReturnType(true, 0);
+        }
+        ReturnType left = process(head.left);
+        ReturnType right = process(head.right);
+        int height = Math.max(left.height, right.height) + 1;
+        boolean isBalanced = left.isBalanced && right.isBalanced && Math.abs(left.height - right.height) < 2;
+        return new ReturnType(isBalanced, height);
+    }
 }
