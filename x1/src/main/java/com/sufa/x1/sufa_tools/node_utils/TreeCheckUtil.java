@@ -2,9 +2,7 @@ package com.sufa.x1.sufa_tools.node_utils;
 
 import com.sufa.x1.sufa_tools.base.Node;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class TreeCheckUtil {
 
@@ -66,6 +64,41 @@ public class TreeCheckUtil {
                     }
                     node = node.right;
                 }
+            }
+        }
+        return true;
+    }
+
+    /*
+     * 宽度遍历
+     * */
+    public static boolean checkIsCompleteTree(Node head) {
+        if (head == null) {
+            return true;
+        }
+        Node l = null;
+        Node r = null;
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(head);
+        boolean flag = false;
+        while (!queue.isEmpty()) {
+            head = queue.poll();
+            l = head.left;
+            r = head.right;
+            if (l == null && r != null) {
+                return false;
+            }
+            if (flag && l != null && r != null) {
+                return false;
+            }
+            if (l != null) {
+                queue.add(l);
+            }
+            if (r != null) {
+                queue.add(r);
+            }
+            if (l == null || r == null) {
+                flag = true;
             }
         }
         return true;
