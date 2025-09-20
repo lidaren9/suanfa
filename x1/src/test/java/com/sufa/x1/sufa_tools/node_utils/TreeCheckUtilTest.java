@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
 
-@SpringBootTest
 class TreeCheckUtilTest {
 
     @BeforeEach
@@ -89,5 +88,27 @@ class TreeCheckUtilTest {
         boolean checkBst2 = TreeCheckUtil.checkBst2(node5);
         System.out.println(checkBst2);
         Assert.isTrue(checkBst2, "");
+    }
+
+    @Test
+    void checkIsCompleteTree() {
+        Node root1 = new Node(1);
+        Node node2 = new Node(2);
+        Node node3 = new Node(3);
+        Node node4 = new Node(4);
+        Node node5 = new Node(5);
+        Node node6 = new Node(6);
+        Node node7 = new Node(7);
+        Node node8 = new Node(8);
+        Node test1 = new Node(1);
+        node5.left = node3;
+        node5.right = node7;
+        node3.left = node2;
+        node3.right = node4;
+        node2.left = root1;
+        node7.left = node6;
+        node7.right = node8;
+        boolean checkIsCompleteTree = TreeCheckUtil.checkIsCompleteTree(node5);
+        Assert.isTrue(checkIsCompleteTree, "");
     }
 }
