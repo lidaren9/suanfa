@@ -34,5 +34,6 @@ public class Prim {
                 }
             }
         }
+        return result;
     }
 }
