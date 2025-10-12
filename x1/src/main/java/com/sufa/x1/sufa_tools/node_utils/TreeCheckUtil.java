@@ -107,7 +107,7 @@ public class TreeCheckUtil {
     /*
      * 宽度遍历
      * */
-    public static boolean checkIsCompleteTree(Node head) {
+    public static boolean checkIsCompleteTree1(Node head) {
         if (head == null) {
             return true;
         }
